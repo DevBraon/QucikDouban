@@ -1,0 +1,38 @@
+{
+  "package": "com.baron.quickdouban",/*应用包名*/
+  "name": "QuickDouban",/*应用名称*/
+  "versionName": "1.0",
+  "versionCode": 1,
+  "icon": "/Common/logo.png",/*应用图标*/
+  "features": [/*接口列表*/
+    {"name": "system.prompt"},
+	{"name": "system.fetch"},
+	{"name": "system.device"},
+	{"name": "system.storage"}
+  ],
+  "permissions": [
+    { "origin": "*" }
+  ],
+  "config": {
+    "logLevel": "debug"/*打印日志等级*/
+  },
+  "router": {/*路由信息*/
+    "entry": "Home",
+    "pages": {
+      "Home": {
+        "component": "index"
+      }
+    }
+  },
+  "display": {/*UI显示相关的配置*/
+    "backgroundColor": "#fbf9fe",
+    "titleBar": true,
+    "titleBarBackgroundColor": "#0faeff",
+    "titleBarTextColor": "#ffffff",
+    "pages": {
+      "Home": {
+        "titleBarText": "豆瓣电影"
+      }
+    }
+  }
+}
